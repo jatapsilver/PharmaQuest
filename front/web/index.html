@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pharma Quest</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.2/web3.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="./styles/index.css">
+  </head>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Home
+        </a>
+  
+        <a class="navbar-item" href="../web/pages/about.html">
+          About
+        </a>
+          <a class="navbar-item" href="../web/pages/Avalanche.html" >
+          Avalanche
+          </a>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+            <div ></div>
+            <a class="button">
+              <strong id="connectButton" onclick="connectCoreWallet()" >Connect to Wallet</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Pharma Quest
+      </h1>
+      <p class="subtitle">
+        <span class="letra">S</span>umergete en la vida de un profesional de la salud en un consultorio vibrante y dinámico. En este innovador videojuego, te enfrentas al reto de diagnosticar a los pacientes y entregarles medicamentos adecuados para salvar vidas. <br><br>
+
+        <span class="letra">T</span>u consultorio es el epicentro de la acción, donde cada decisión cuenta. Utiliza fórmulas médicas precisas para recetar tratamientos que se ajusten a las necesidades específicas de cada paciente. Desde simples resfriados hasta enfermedades complejas, tendrás que analizar síntomas, realizar pruebas y determinar la dosis correcta de medicamentos. <br><br>
+
+        <span class="letra">E</span>l juego ofrece una experiencia educativa y emocionante, con escenarios que imitan la realidad de un consultorio ocupado. A medida que avanzas, enfrentarás desafíos como pacientes con condiciones raras y emergencias médicas que pondrán a prueba tus habilidades de diagnóstico y gestión.
+      </p>
+    </div>
+  </section>
+
+  <section class="sectionBox">
+    <div class="box">
+      <iframe class="videojuego" src="../unity/indexunity.html" frameborder="0"></iframe>
+    </div>
+  </section>
+
+  <section>
+    <div>
+
+    </div>
+  </section>
+<footer>
+    <p class="footer">© 2024 Pharma Quest. Todos los derechos reservados.</p>  
+</footer>
+  <script src ="../web/scripts/conectToWallet.js"></script>
+  <script src ="./web/scripts/saldoToken.js"></script>
+  <script src="./web/scripts/rewardPlayer.js"></script>
+  </body>
+</html>

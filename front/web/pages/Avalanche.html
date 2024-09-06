@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pharma Quest</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.2/web3.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="../styles/index.css">
+  </head>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="../index.html">
+          Home
+        </a>
+  
+        <a class="navbar-item" href="../web/pages/about.html">
+          About
+        </a>
+          <a class="navbar-item">
+          Avalanche
+          </a>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+            <div ></div>
+            <a class="button">
+              <strong id="connectButton" onclick="connectCoreWallet()" >Connect to Wallet</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Avalanches 
+      </h1>
+      <h2 class="subtitle">
+        Ests espacio lo hemos creado para probar las funcionalidades que desarrollamos en web3 y avanlache durante la hackatón
+      </h2>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="subtitle">Verificacion de saldo en la billetera core</h2>
+    <div class="divSolicitud">
+        <button id="solicitudSaldoButton" class="button">Solicitud de saldo</button>
+    </div>
+    <div class="divSolicitud" id="saldoContainerPill">Saldo en Pills: <span id="saldoTextPill">No solicitado aún</span></div>
+    <div class="divSolicitud" id="saldoContainerkit">Saldo en kits: <span id="saldoTextKit">No solicitado aún</span></div>
+  </section>
+
+ <br><br>
+  <h2 class="subtitle">Envio de recompensas</h2>
+
+  <section >
+    <div class="divSolicitud">
+      <label class="label">Pills</label>
+    </div>
+
+    <div class="divSolicitud">
+        <div class="inputSolicitud">
+            <input id="pillInput" class="input" type="number" placeholder="Cantidad de Pills">
+        </div>
+    </div>
+    
+    <div class="divSolicitud">
+        <label class="label">Kits</label>
+      </div>
+
+      <div class="divSolicitud">
+        <div class="inputSolicitud">
+            <input id="kitInput" class="input" type="number" placeholder="Cantidad de Kits">
+        </div>
+    </div>
+
+   
+<div class="divSolicitud">
+    <div class="control">
+        <button id="enviarRecompensaButton" class="button is-primary">Enviar Recompensas</button>
+      </div>
+</div>
+  </section>
+
+  <footer>
+    <p class="footer">© 2024 Pharma Quest. Todos los derechos reservados.</p>  
+</footer>
+
+  <script src ="../scripts/conectToWallet.js"></script>
+  <script src="../scripts/saldoToken.js"></script>
+  <script src="../scripts/rewardPlayer.js"></script>
+  </body>
+</html>

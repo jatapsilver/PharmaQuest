@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pharma Quest</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.2/web3.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="../styles/index.css">
+  </head>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="../index.html">
+          Home
+        </a>
+  
+        <a class="navbar-item">
+          About
+        </a>
+          <a class="navbar-item" href="./Avalanche.html">
+          Avalanche
+          </a>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+            <div ></div>
+            <a class="button">
+              <strong id="connectButton" onclick="connectCoreWallet()" >Connect to Wallet</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <body>
+    
+    <h1 class="title">About</h1>
+    
+    <section>
+        <p class="subtitleAbout">Queremos dar un gran agradecimiento a la Universidad Sergio Arboleda y a Avalanche <br> por ofrecernos un espacio tan increíble durante la hackatón.  Gracias a ustedes, tuvimos la oportunidad de sumergirnos en el fascinante mundo de Unity, diseño web, blockchain, y la integración de contratos inteligentes en videojuegos y Web 3. <br> Su apoyo ha sido clave para nuestra experiencia de aprendizaje y nos ha inspirado a seguir explorando estas tecnologías revolucionarias. <br>
+
+            <br>
+            Con aprecio,
+            <br>
+            Team PharmaQuest</p>
+    </section>
+
+    <section >
+        <div class="containerImg">
+            <img class="imgTeam" src="../src/img/teamPharmaQuest.jpg" alt="">
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer">© 2024 Pharma Quest. Todos los derechos reservados.</p>  
+    </footer>
+
+  <script src ="../scripts/conectToWallet.js"></script>
+  </body>
+</html>
